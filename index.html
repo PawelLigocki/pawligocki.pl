@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moja Strona</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== STRONA GŁÓWNA (Hero) ========== -->
+  <section id="home" class="page active">
+    <div class="hero">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <!-- <div class="logo-svg">
+        <svg width="180" height="80" viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="198" height="88" rx="6" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+            <rect x="1" y="1" width="198" height="44" rx="6" fill="#1a1a1a"/>
+            <rect x="1" y="40" width="198" height="5" fill="#1a1a1a"/>
+            <text x="100" y="23" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle" dominant-baseline="central" letter-spacing="8">PAW</text>
+            <text x="100" y="67" font-family="Inter,sans-serif" font-size="13" font-weight="300" fill="#888" text-anchor="middle" dominant-baseline="central" letter-spacing="8">LIGOCKI</text>
+        </svg>
+    </div> -->
+      <h1 class="hero-name">Paweł Ligocki</h1>
+      <p class="hero-subtitle">Biegacz · Pasjonat · Twórca</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/pawligocki/" class="social-btn" target="_blank">Instagram</a>
+        <a href="https://www.strava.com/athletes/62953971" class="social-btn" target="_blank">Strava</a>
+        <a href="https://github.com/PawelLigocki" class="social-btn" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/pawligocki/" class="social-btn" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/despxd/" class="social-btn" target="_blank">Facebook</a>
+      </div>
+      <button class="scroll-down" onclick="showPage('about')">
+        ↓ Poznaj mnie
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== NAWIGACJA ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- <span class="nav-logo" onclick="showPage('home')">PAWLIGOCKI</span> -->
+      <span class="nav-logo" onclick="showPage('home')">
+          <svg width="160" height="50" viewBox="0 0 200 90">
+            <rect x="1" y="1" width="198" height="88" rx="6" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+            <rect x="1" y="1" width="198" height="44" rx="6" fill="#1a1a1a"/>
+            <rect x="1" y="40" width="198" height="5" fill="#1a1a1a"/>
+            <text x="100" y="23" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle" dominant-baseline="central" letter-spacing="8">PAW</text>
+            <text x="100" y="67" font-family="Inter,sans-serif" font-size="13" font-weight="300" fill="#888" text-anchor="middle" dominant-baseline="central" letter-spacing="8">LIGOCKI</text>
+          </svg>
+      </span>
+      <div class="nav-links">
+        <button onclick="showPage('about')"       class="nav-btn" data-page="about">O mnie</button>
+        <button onclick="showPage('goals')"       class="nav-btn" data-page="goals">Cele</button>
+        <button onclick="showPage('calculator')"  class="nav-btn" data-page="calculator">Kalkulator</button>
+        <button onclick="showPage('countdown')"   class="nav-btn" data-page="countdown">Licznik</button>
+        <button onclick="showPage('activities')"  class="nav-btn" data-page="activities">Aktywności</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== ZAKŁADKA 1: O MNIE ========== -->
+<!-- ========== ZAKŁADKA 1: O MNIE ========== -->
+<section id="about" class="page">
+  <div class="container">
+    <h2>O mnie</h2>
+    <div class="about-grid">
+
+      <div class="about-photo">
+        <img src="images/photo.jpg" alt="Paweł Ligocki" class="about-photo-img" />
+          <!-- <svg width="80" height="80" viewBox="0 0 80 80"> -->
+            <circle cx="40" cy="30" r="18" fill="none" stroke="#bbb" stroke-width="2"/>
+            <path d="M10 75 Q10 50 40 50 Q70 50 70 75" fill="none" stroke="#bbb" stroke-width="2"/>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h3 class="about-name">Paweł Ligocki</h3>
+        <p class="about-bio">
+          QA Engineer, biegacz i pasjonat nowych technologii. 
+          Na co dzień pracuję w branży IT, ale moją prawdziwą pasją jest bieganie - od krótkich dystansów po ultramaratony. 
+          Uwielbiam łączyć sport z technologią, dlatego tworzę narzędzia i aplikacje dla biegaczy. 
+          Na tej stronie znajdziesz informacje o mnie, moje cele biegowe, kalkulator tempa, licznik dni do ważnych wydarzeń oraz moje aktywności. 
+          Zapraszam do poznania mojej historii i wspólnego dzielenia się pasją do biegania!    
+        </p>
+
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-value">60</span>
+            <span class="fact-label">km najdłuższy bieg</span>
+          </div>
+          <div class="fact">
+            <span class="fact-value">2021</span>
+            <span class="fact-label">rok pierwszego startu</span>
+          </div>
+          <div class="fact">
+            <span class="fact-value">4/6</span>
+            <span class="fact-label">SuperHalfs</span>
+          </div>
+          <div class="fact">
+            <span class="fact-value">2</span>
+            <span class="fact-label">Maratony</span>
+          </div>
+          <div class="fact">
+            <span class="fact-value">1</span>
+            <span class="fact-label">Korona Gór Polski</span>
+          </div>          
+        </div>
+
+        <div class="about-tags">
+          <span class="tag">Bieganie</span>
+          <span class="tag">Triathlon</span>
+          <span class="tag">Góry</span>
+          <span class="tag">IT</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== ZAKŁADKA 2: CELE I OSIĄGNIĘCIA ========== -->
+<section id="goals" class="page">
+  <div class="container">
+
+    <h2>Cele</h2>
+    <div class="goals-grid">
+
+      <div class="goal-card">
+        <div class="goal-header">
+          <span class="goal-title">Maraton sub 3h</span>
+          <span class="goal-status in-progress">W trakcie</span>
+        </div>
+        <div class="goal-bar">
+          <div class="goal-fill" style="width: 50%"></div>
+        </div>
+        <div class="goal-meta">
+          <span>Aktualny czas: 3:45</span>
+          <span>50%</span>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <div class="goal-header">
+          <span class="goal-title">Półmaraton sub 1h30m</span>
+          <span class="goal-status in-progress">W trakcie</span>
+        </div>
+        <div class="goal-bar">
+          <div class="goal-fill" style="width: 60%"></div>
+        </div>
+        <div class="goal-meta">
+          <span>Aktualny czas: 1:38</span>
+          <span>60%</span>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <div class="goal-header">
+          <span class="goal-title">Zasłużony Honorowy Dawca Krwi - 3 stopnia</span>
+          <span class="goal-status in-progress">W trakcie</span>
+        </div>
+        <div class="goal-bar">
+          <div class="goal-fill" style="width: 85%"></div>
+        </div>
+        <div class="goal-meta">
+          <span></span>
+          <span>85%%</span>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <div class="goal-header">
+          <span class="goal-title">Ironman Thun, Switzerland</span>
+          <span class="goal-status planned">Planowany</span>
+        </div>
+        <div class="goal-bar">
+          <div class="goal-fill" style="width: 10%"></div>
+        </div>
+        <div class="goal-meta">
+          <span>05/07/2026</span>
+          <span>10%</span>
+        </div>
+      </div>
+
+
+
+    <h2 style="margin-top: 60px;">Osiągnięcia</h2>
+    <div class="achievements-list">
+
+      <div class="achievement">
+        <div class="achievement-icon">✓</div>
+        <div class="achievement-info">
+          <span class="achievement-title">Kurs Zimowej Turystyki Wysokogórskiej</span>
+          <span class="achievement-desc">Poziom Podstawowy</span>
+        </div>
+        <span class="achievement-date">2026</span>
+      </div>
+
+      <div class="achievement">
+        <div class="achievement-icon">✓</div>
+        <div class="achievement-info">
+          <span class="achievement-title">Górski Zimowy Maraton Ślężański</span>
+          <span class="achievement-desc">60 km</span>
+        </div>
+        <span class="achievement-date">2026</span>
+      </div>
+
+      <div class="achievement">
+        <div class="achievement-icon">✓</div>
+        <div class="achievement-info">
+          <span class="achievement-title">Korona Gór Polski</span>
+          <span class="achievement-desc">28/28 szczytów</span>
+        </div>
+        <span class="achievement-date">2025</span>
+      </div>
+
+      <div class="achievement">
+        <div class="achievement-icon">✓</div>
+        <div class="achievement-info">
+          <span class="achievement-title">Ultramaraton Kotła Świdwińskiego</span>
+          <span class="achievement-desc">60 km</span>
+        </div>
+        <span class="achievement-date">2025</span>
+      </div>
+
+
+      <div class="achievement">
+        <div class="achievement-icon">✓</div>
+        <div class="achievement-info">
+          <span class="achievement-title"> Korona Półmaratonów Polski</span>
+          <span class="achievement-desc">5/10 biegów</span>
+        </div>
+        <span class="achievement-date">2024</span>
+      </div>
+
+      <div class="achievement">
+        <div class="achievement-icon">✓</div>
+        <div class="achievement-info">
+          <span class="achievement-title">Maraton Poznań</span>
+          <span class="achievement-desc">Pierwszy maraton - 4:07:33</span>
+        </div>
+        <span class="achievement-date">2023</span>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ========== ZAKŁADKA 3: KALKULATOR ========== -->
+<!-- ========== ZAKŁADKA 3: KALKULATOR ========== -->
+<section id="calculator" class="page">
+  <div class="container">
+    <h2>Kalkulator tempa biegu</h2>
+
+    <div class="calc-grid">
+
+      <!-- KALKULATOR 1: Tempo → Czas -->
+      <div class="calc-card">
+        <h3 class="calc-title">Tempo → Czas ukończenia</h3>
+        <p class="calc-desc">Podaj tempo i dystans, oblicz czas ukończenia.</p>
+
+        <div class="calc-inputs">
+          <div class="input-group">
+            <label>Tempo (min/km)</label>
+            <div class="input-row">
+              <input type="number" id="pace-min" placeholder="5" min="2" max="15" />
+              <span class="input-sep">:</span>
+              <input type="number" id="pace-sec" placeholder="30" min="0" max="59" />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Dystans</label>
+            <div class="preset-btns">
+              <button class="preset" onclick="setDistance(5)">5 km</button>
+              <button class="preset" onclick="setDistance(10)">10 km</button>
+              <button class="preset" onclick="setDistance(21.097)">Półmaraton</button>
+              <button class="preset" onclick="setDistance(42.195)">Maraton</button>
+            </div>
+            <input type="number" id="distance" placeholder="km" step="0.1" min="0.1" />
+          </div>
+        </div>
+
+        <button class="calc-btn" onclick="calcTime()">Oblicz czas</button>
+
+        <div class="calc-result" id="result-time">
+          <span class="result-label">Czas ukończenia</span>
+          <span class="result-value" id="time-output">—</span>
+          <span class="result-sub" id="time-sub"></span>
+        </div>
+      </div>
+
+      <!-- KALKULATOR 2: Czas → Tempo -->
+      <div class="calc-card">
+        <h3 class="calc-title">Czas → Tempo</h3>
+        <p class="calc-desc">Podaj czas ukończenia i dystans, oblicz wymagane tempo.</p>
+
+        <div class="calc-inputs">
+          <div class="input-group">
+            <label>Czas ukończenia</label>
+            <div class="input-row">
+              <input type="number" id="finish-h" placeholder="hh" min="0" max="24" />
+              <span class="input-sep">:</span>
+              <input type="number" id="finish-m" placeholder="mm" min="0" max="59" />
+              <span class="input-sep">:</span>
+              <input type="number" id="finish-s" placeholder="ss" min="0" max="59" />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Dystans</label>
+            <div class="preset-btns">
+              <button class="preset" onclick="setDistance2(5)">5 km</button>
+              <button class="preset" onclick="setDistance2(10)">10 km</button>
+              <button class="preset" onclick="setDistance2(21.097)">Półmaraton</button>
+              <button class="preset" onclick="setDistance2(42.195)">Maraton</button>
+            </div>
+            <input type="number" id="distance2" placeholder="km" step="0.1" min="0.1" />
+          </div>
+        </div>
+
+        <button class="calc-btn" onclick="calcPace()">Oblicz tempo</button>
+
+        <div class="calc-result" id="result-pace">
+          <span class="result-label">Wymagane tempo</span>
+          <span class="result-value" id="pace-output">—</span>
+          <span class="result-sub" id="pace-sub"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PROGNOZA WYNIKÓW -->
+    <h3 class="section-subtitle">Prognoza wyników</h3>
+    <p class="calc-desc" style="margin-bottom: 20px;">
+      Na podstawie jednego wyniku oszacuj swoje czasy na innych dystansach.
+    </p>
+
+    <div class="calc-card" style="max-width: 500px;">
+      <div class="calc-inputs">
+        <div class="input-group">
+          <label>Twój wynik</label>
+          <div class="input-row">
+            <input type="number" id="ref-h" placeholder="hh" min="0" max="24" />
+            <span class="input-sep">:</span>
+            <input type="number" id="ref-m" placeholder="mm" min="0" max="59" />
+            <span class="input-sep">:</span>
+            <input type="number" id="ref-s" placeholder="ss" min="0" max="59" />
+          </div>
+        </div>
+        <div class="input-group">
+          <label>Na dystansie</label>
+          <div class="preset-btns">
+            <button class="preset" onclick="setRefDist(5)">5 km</button>
+            <button class="preset" onclick="setRefDist(10)">10 km</button>
+            <button class="preset" onclick="setRefDist(21.097)">Półmaraton</button>
+            <button class="preset" onclick="setRefDist(42.195)">Maraton</button>
+          </div>
+        </div>
+      </div>
+      <button class="calc-btn" onclick="calcPredict()">Prognozuj</button>
+    </div>
+
+    <div class="predict-grid" id="predict-grid"></div>
+
+  </div>
+</section>
+
+  <!-- ========== ZAKŁADKA 4: LICZNIK ========== -->
+<!-- ========== ZAKŁADKA 4: LICZNIK ========== -->
+<section id="countdown" class="page">
+  <div class="container">
+    <h2>Licznik wydarzeń</h2>
+
+    <!-- TWOJE WYDARZENIA -->
+    <h3 class="section-subtitle">Moje wydarzenia</h3>
+    <div class="countdown-grid" id="my-events"></div>
+
+    <!-- SEPARATOR -->
+    <div class="countdown-separator"></div>
+
+    <!-- LICZNIK UŻYTKOWNIKA -->
+    <h3 class="section-subtitle">Stwórz swój licznik</h3>
+    <p class="calc-desc" style="margin-bottom: 20px;">
+      Dodaj wydarzenie, skopiuj link i udostępnij znajomym.
+    </p>
+
+    <div class="calc-card" style="max-width: 500px;">
+      <div class="calc-inputs">
+
+        <div class="input-group">
+          <label>Nazwa wydarzenia</label>
+          <input type="text" id="user-event-name" placeholder="np. Mój pierwszy maraton"
+            style="width:100%; padding:10px 12px; border:1px solid var(--border);
+            border-radius:8px; background:var(--bg); color:var(--text);
+            font-family:var(--font); font-size:1rem;" />
+        </div>
+
+        <div class="input-group">
+          <label>Data wydarzenia</label>
+          <input type="date" id="user-event-date"
+            style="width:100%; padding:10px 12px; border:1px solid var(--border);
+            border-radius:8px; background:var(--bg); color:var(--text);
+            font-family:var(--font); font-size:1rem;" />
+        </div>
+
+        <div class="input-group">
+          <label>Emoji (opcjonalnie)</label>
+          <input type="text" id="user-event-emoji" placeholder="🏃"
+            maxlength="2"
+            style="width:80px; padding:10px 12px; border:1px solid var(--border);
+            border-radius:8px; background:var(--bg); color:var(--text);
+            font-family:var(--font); font-size:1.2rem; text-align:center;" />
+        </div>
+
+      </div>
+
+      <button class="calc-btn" onclick="createUserCountdown()">
+        Utwórz licznik i skopiuj link
+      </button>
+
+      <div id="user-countdown-result" style="display:none;">
+        <div class="calc-result">
+          <span class="result-label">Twój licznik</span>
+          <span class="result-value" id="user-countdown-display">—</span>
+          <span class="result-sub" id="user-countdown-sub"></span>
+        </div>
+        <div class="share-box">
+          <input type="text" id="share-link" readonly
+            style="flex:1; padding:10px 12px; border:1px solid var(--border);
+            border-radius:8px; background:var(--bg); color:var(--muted);
+            font-family:var(--font); font-size:0.85rem;" />
+          <button class="preset" id="copy-btn" onclick="copyLink()">Kopiuj</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== ZAKŁADKA 5: AKTYWNOŚCI ========== -->
+<section id="activities" class="page">
+  <div class="container">
+    <h2>Aktywności</h2>
+
+    <!-- STATYSTYKI -->
+    <div class="stats-grid" id="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value" id="stat-runs">—</span>
+        <span class="stat-label">biegów w tym roku</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-distance">—</span>
+        <span class="stat-label">km w tym roku</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-elevation">—</span>
+        <span class="stat-label">m przewyższenia</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="stat-all">—</span>
+        <span class="stat-label">km łącznie</span>
+      </div>
+    </div>
+
+    <!-- FILTRY -->
+    <div class="activity-filters">
+      <button class="preset active" onclick="filterActivities('all', this)">Wszystkie</button>
+      <button class="preset" onclick="filterActivities('Run', this)">Bieg</button>
+      <button class="preset" onclick="filterActivities('Swim', this)">Pływanie</button>
+      <button class="preset" onclick="filterActivities('VirtualRide', this)">Rower</button>
+      <button class="preset" onclick="filterActivities('Workout', this)">Trening</button>
+    </div>
+
+    <!-- LISTA AKTYWNOŚCI -->
+    <div class="activities-list" id="activities-list">
+      <div class="activity-loading">Ładowanie aktywności...</div>
+    </div>
+
+  </div>
+</section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
