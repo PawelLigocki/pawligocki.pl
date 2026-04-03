@@ -259,7 +259,7 @@ loadCountdownFromURL();
 
 // ===== AKTYWNOŚCI STRAVA =====
 
-const API = 'http://127.0.0.1:5001';
+const API = 'https://pawligockipl-production.up.railway.app';
 let allActivities = [];
 
 const ACTIVITY_ICONS = {
